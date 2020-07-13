@@ -34,7 +34,8 @@ class Classy(object):
             else:
                 classiness = 0
         print(classiness)
-        
+
+Classy()
 
 
 
