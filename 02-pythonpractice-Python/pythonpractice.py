@@ -19,10 +19,10 @@ class Classy(object):
     def __init__(self):
         self.items = []
     
-    def addItem(self, item):
+    def classy(self, item):
         self.items.append(item)
     
-    def getclassiness(self):
+    def calculate(self):
         classiness = 0
         for item in self.items:
             if item == "tophat":
@@ -34,10 +34,11 @@ class Classy(object):
             # else:
             #     classiness = 0
         return classiness
+
 m = Classy()
 
-m.addItem("bowtie")
-print(m.getclassiness())
+m.classy("bowtie")
+print(m.calculate())
 
 
 
