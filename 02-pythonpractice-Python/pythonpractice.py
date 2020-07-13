@@ -20,11 +20,9 @@ class Classy(object):
         self.items = []
     
     def classy(self, item):
-        append.self.item
+        self.item.append(item)
     
-
-    
-    def classiness(self):
+    def calculate(self):
         classiness = 0
 
 
