@@ -31,7 +31,7 @@ class Classy(object):
                 classiness = classiness + 4
             if item == "monocle":
                 classiness = classiness + 5
-            
+        
 
 
 
