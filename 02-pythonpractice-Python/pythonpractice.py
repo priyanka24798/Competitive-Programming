@@ -24,5 +24,11 @@ class Classy(object):
     
     def calculate(self):
         classiness = 0
+        for item in self.item:
+            if item == "tophat":
+                classiness = classiness + 2
+            if item == "bowtie":
+                classiness 
+
 
 
