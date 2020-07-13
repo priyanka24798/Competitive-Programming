@@ -7,5 +7,6 @@
 
 
 def show_excitement():
+    str
     # Your code goes here!
     pass
