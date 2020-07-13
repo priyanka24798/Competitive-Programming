@@ -18,3 +18,8 @@ Use the test cases below to guide you!"""
 class Classy(object):
     def __init__(self):
         self.items = []
+    
+    def Classy(self):
+        classiness = 0
+        
+
