@@ -33,6 +33,7 @@ class Classy(object):
                 classiness = classiness + 5
             else:
                 classiness = 0
+        
 
 
 
