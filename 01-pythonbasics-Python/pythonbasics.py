@@ -7,8 +7,8 @@
 
 
 def show_excitement():
-    str = "I super excited for this course! "
-    return string*5
+    word = "I super excited for this course! "
+    return word*5
     # Your code goes here!
 # print(show_excitement())
     
