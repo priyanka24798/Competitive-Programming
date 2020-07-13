@@ -19,9 +19,12 @@ class Classy(object):
     def __init__(self):
         self.items = []
     
+    def classy(self, item):
+        append.self.item
     
+
     
-    def Classy(self):
+    def classiness(self):
         classiness = 0
 
 
