@@ -27,9 +27,9 @@ class Classy(object):
         for item in self.items:
             if item == "tophat":
                 classiness = classiness + 2
-            elif item == "bowtie":
+            if item == "bowtie":
                 classiness = classiness + 4
-            elif item == "monocle":
+            if item == "monocle":
                 classiness = classiness + 5
             # else:
             #     classiness = 0
