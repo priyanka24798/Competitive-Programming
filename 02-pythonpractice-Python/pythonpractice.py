@@ -28,7 +28,10 @@ class Classy(object):
             if item == "tophat":
                 classiness = classiness + 2
             if item == "bowtie":
-                classiness 
+                classiness = classiness + 4
+            if item == "monocle":
+                classiness = classiness 
+
 
 
 
