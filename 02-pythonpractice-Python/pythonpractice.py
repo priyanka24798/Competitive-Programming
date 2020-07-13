@@ -35,10 +35,10 @@ class Classy(object):
             #     classiness = 0
         return classiness
 
-m = Classy()
+a = Classy()
 
-m.classy("bowtie")
-print(m.calculate())
+Classy().classy("bowtie")
+print(a.calculate())
 
 
 
