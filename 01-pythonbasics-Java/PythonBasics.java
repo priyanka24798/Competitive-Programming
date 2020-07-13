@@ -8,6 +8,16 @@
 
 public class PythonBasics {
     public String show_excitement() {
-    	// your code goes here
+		String word = "I am super excited for this course!";
+		String word1 = "";
+		for(int i = 0; i < 5; i++){
+			word1= word1+word+" ";
+		
+		}
+		return word1;
+    	// your code goes her
+	}
+	public static void main(String[] args) {
+		
 	}
 }
