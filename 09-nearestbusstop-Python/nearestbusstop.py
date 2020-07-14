@@ -9,11 +9,32 @@
 
 def fun_nearestbusstop(street):
 	result = 0
-	if street >= 0:
-		if street % 4 == 0 and street > 8:
-			result += 8
-			return result
+	n = street // 8
+	
+	# if street == 0:
+	# 	return 0
+	
+	if n == 0:
+		if (street % 8) <= 4:
+    			
+			result += n*8
+		else:
+			result += (n+1)*8	
+
+	
+
+	if n > 0:
+		if (street % 8) <= 4:   			
+			result += n*8
+		else:
+			result += (n+1)*8
+	return result 
+		
+	
+			
+    		
+		
 				
 			
-	return -1
-print(fun_nearestbusstop(13))
+	
+print(fun_nearestbusstop(16))
