@@ -5,5 +5,12 @@
 
 
 def fun_distance(x1, y1, x2, y2):
+
+	dist = (x2-x1)**2 + (y2-y1)**2
+
+	sqrt = (dist)**0.5
+
 	# your code goes here
-	return 0
+	return int(sqrt)
+
+print(fun_distance(0,0,0,-2))
