@@ -6,4 +6,11 @@
 
 
 def fun_isfactor(f, n):
+	for i in range(1,f):
+		if f % i == 0:
+			print(f)
+	if f == n:
+		return True
+    			
 	return False # replace with your solution
+print(fun_isfactor(-2,4))
