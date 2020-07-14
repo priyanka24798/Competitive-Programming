@@ -8,9 +8,9 @@ def fun_distance(x1, y1, x2, y2):
 
 	dist = (x2-x1)**2 + (y2-y1)**2
 
-	sqrt = (dist)**0.5
+	result = (dist)**0.5
 
 	# your code goes here
-	return int(sqrt)
+	return int(result)
 
 print(fun_distance(0,0,0,-2))
