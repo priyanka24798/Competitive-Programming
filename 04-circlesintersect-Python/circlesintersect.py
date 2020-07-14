@@ -13,4 +13,4 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	else:
 		return False 
 
-print(fun_circlesintersect(-10, 8, 30, 14, -24, 10))
+print(fun_circlesintersect(5, 6, 14, 8, 7, 9))
