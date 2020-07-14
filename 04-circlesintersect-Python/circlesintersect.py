@@ -10,7 +10,9 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	
 	if b > a:
 		return True
+	# elif b == a:
+    # 	return True
 	else:
 		return False 
 
-print(fun_circlesintersect(2, 3, 12, 15, 28, 10))
+print(fun_circlesintersect(5, 6, 14, 8, 7, 9))
