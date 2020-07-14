@@ -6,13 +6,21 @@
 
 def isevenpositiveint(x):
 	y = (x)
+	try:
+	
+		if y > 0 and y %2 == 0:
+			return True
+		elif type(y) == str:
+			return False
+
+		return False
+	except:
+		return False
+		
+
+	
 	
 
-	if y > 0 and y %2 == 0:
-		return True
-	else:
-		return False
-			
 	# your code goes here
 	
-print(isevenpositiveint(1))
+print(isevenpositiveint((12,)))
