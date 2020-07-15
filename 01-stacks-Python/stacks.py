@@ -45,11 +45,11 @@ class stack(object):
 
     def push(self, new_element):
         "Push (add) a new element onto the top of the stack"
-        return self.11.insert_first(new_element)
+        return self.ll.insert_first(new_element)
         pass
 
     def pop(self):
         "Pop (remove) the first element off the top of the stack and return it"
-        return self.11.delete_first()
+        return self.ll.delete_first()
         pass
     
