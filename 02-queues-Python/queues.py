@@ -18,8 +18,13 @@ class Queue:
 
     def dequeue(self):
         print(self.storage)
+        print(self.storage[0])
         return self.storage.pop(0)
         pass
 
 m = Queue(3)
-m.dequeue()
+m.enqueue(1)
+m.enqueue(5)
+m.enqueue(6)
+# m.dequeue()
+print(m.dequeue())
