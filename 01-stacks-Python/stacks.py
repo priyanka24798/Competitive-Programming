@@ -7,12 +7,12 @@ why is it easier to add an "insert_first"
 function than just use "append"?"""
 
 class Element(object):
-    def __init__(self, value):
+    def _init_(self, value):
         self.value = value
         self.next = None
         
 class LinkedList(object):
-    def __init__(self, head=None):
+    def _init_(self, head=None):
         self.head = head
         
     def append(self, new_element):
@@ -25,32 +25,31 @@ class LinkedList(object):
             self.head = new_element
 
     def insert_first(self, new_element):
-        new_element.next = self.head
-        self.head = new_element
         "Insert new element as the head of the LinkedList"
-        pass
+        temp = self.head
+        self.head = new_element
+        self.head.next = temp
 
     def delete_first(self):
-        if self.head:
-            first = self.head
-            self.head = self.head.next
-            return first
-        else:
-            return None
         "Delete the first (head) element in the LinkedList as return it"
-        pass
+        first_deleted = self.head
+        if self.head:
+            self.head = first_delted.next
+            return first_deleted
+        return None
+        
 
 class stack(object):
-    def __init__(self,top=None):
+    def _init_(self,top=None):
         self.ll = LinkedList(top)
 
     def push(self, new_element):
-        self.ll.insert_first(new_element)
         "Push (add) a new element onto the top of the stack"
+        return self.11.insert_first(new_element)
         pass
 
     def pop(self):
-        return self.ll.delete_first()
         "Pop (remove) the first element off the top of the stack and return it"
+        return self.11.delete_first()
         pass
     
