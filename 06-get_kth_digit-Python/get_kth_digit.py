@@ -11,20 +11,23 @@ def fun_get_kth_digit(digit, k):
 		
 		# if digit < 0:
 		# 	return 
-		
-		lst = []
-		for i in digit:
-			lst.append(i)
-			s = (lst[::-1])
+		try:
+			lst = []
+			for i in digit:
+				lst.append(i)
+				s = (lst[::-1])
 			if len(s) >= 3:
 				return int(s[k])
 			if k >= 3:
 				return 0
+		except:
+			return 0
+		
 			
 				
     			
 		
-		return 0
+		
 		
     
         
