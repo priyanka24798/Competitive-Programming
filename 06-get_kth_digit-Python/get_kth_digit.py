@@ -6,19 +6,28 @@
 
 
 def fun_get_kth_digit(digit, k):
-	a = str(digit)
-	c = str(k)
-	b = []
-	for i in a:
-		b.append(i)
-		if b[0] == c:
-			print(b[0])
-	# print(b[0]) 
-
+    	
+		digit = str(digit)
 		
+		# if digit < 0:
+		# 	return 
+		
+		lst = []
+		for i in digit:
+			lst.append(i)
+			s = (lst[::-1])
+			if len(s) >= 3:
+				return int(s[k])
+			if k >= 3:
+				return 0
 			
-	# print(b)
-	# if digit <= 0 and k != 0:
-	# 	return k
-	# return 0
-print(fun_get_kth_digit(789, 1))
+				
+    			
+		
+		return 0
+		
+    
+        
+            
+    
+print(fun_get_kth_digit(789,2))
