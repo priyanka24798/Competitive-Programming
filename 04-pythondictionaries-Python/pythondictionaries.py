@@ -41,49 +41,33 @@ Asian City - Country"""
 
 
 # print("1")
-locations = {'North America': {'USA': ['Atlanta', 'Mountain View']}, 'Asia': {'India':'Bangalore', 'China':'Shanghai'}, 'Africa': {'Egypt':['Cairo']}}
+locations = {'North America': {'USA': ['Atlanta', 'Mountain View']}, 'Asia': {'India':'Bangalore', 'China':'Shanghai'}}
 
 def sortUSA():
     # print("1")
-    # cities = []
     USA = sorted(locations['North America'].values())
-
     for i in USA:
-        
-        # print(i)
-        # cities.append(i)
-
-        print (i)
+        return i
 sortUSA()
 
-# locations['Asia']= {'India': ['Bangalore']}
-# locations['Asia']['China']= ['Shanghai']
+
 
 # locations = {'Asia': {'India':'Bangalore', 'China':'Shanghai'}}
 
-# print(sortUSA())
+
 def alphaAsia():
-    print("2")
-    # # Asia = sorted(locations['Asia'])
-    # cities = []
-    # for i in locations['Asia'].values():
-    #     print(i, "-")
-    val = locations['Asia']
+    # print("2")
+    
     result = []
     for i in sorted(locations['Asia'].values()):
-        city = i
-        for each in locations['Asia']:
+        print(i)
+        for j in locations['Asia']:
             output = ""
-            if locations['Asia'][each] == city:
-                output += city+" - "+each
+            if locations['Asia'][j] == i:
+                output += i + " - " + j
                 result.append(output)
-    print(result)
-    
-        
-        
-        
-
-
+    return result
+ 
 alphaAsia()
 
 
