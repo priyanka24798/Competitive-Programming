@@ -7,5 +7,31 @@
 
 
 def fun_set_kth_digit(n, k, d):
-		return 0
+	nstr = str(n)
+	dstr = str(d)
+	lst = []
+	for i in nstr:
+		lst.append(i)
+	if k >= len(lst):
+
+		s = lst[::-1]
+		s.append(dstr)
+		r = s[::-1]
+	else:
+		
+        
+    
+		s = lst[::-1]
+		if s[-1] == '-':
+			s[k] =  dstr
+			s.append('-')
+			r = s[::-1]
+		else:
+			s[k] = dstr
+			r = s[::-1]
+	
+	result = ''.join(r)
+	return int(result)
+    		
+		
 
