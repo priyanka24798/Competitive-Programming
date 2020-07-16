@@ -12,6 +12,6 @@ def fun_find_int_roots(a, b, c):
 	root1 = (-(b) + m)//2*a
 	root2 = (-(b) - m)//2*a
 
-	return int(root1), int(root2)
+	return root2,root1
 
 
