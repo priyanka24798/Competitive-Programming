@@ -24,5 +24,5 @@ import pytest
 	(1000, 500500),
 	(99999, 4999950000)
 ])
-def test_numberofpoolballs(n, result):
-    assert numberofpoolballs(n) == result
+def test_numberofpoolballs(rows, result):
+    assert numberofpoolballs(rows) == result
