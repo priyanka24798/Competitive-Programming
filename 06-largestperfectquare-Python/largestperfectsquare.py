@@ -11,7 +11,7 @@ def largestperfectsquare(n):
 	n = abs(n)
 	a = math.sqrt(n)
 	if type(a) == int:
-		return n
+		return a
 	else:
 		int(a)*int(a)
 	# your code goes here
