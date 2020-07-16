@@ -13,8 +13,12 @@
 
 
 def fun_fabricyards(inches):
+	lst = []
+	lst.append(inches)
+	a = sorted(lst)
+	return lst[0]
 	# your code goes here
-	return 1
+print(fun_fabricyards(35))
 
 def fun_fabricexcess(inches):
 	# your code goes here
