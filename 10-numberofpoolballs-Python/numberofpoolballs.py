@@ -13,11 +13,11 @@ def numberofpoolballs(rows):
     while (num > 0):
         sum += num
         num -= 1
-    print(sum)
+    # print(sum)
     return sum
     
 
-print(numberofpoolballs(1000))
+# print(numberofpoolballs(1000))
 
 
 
