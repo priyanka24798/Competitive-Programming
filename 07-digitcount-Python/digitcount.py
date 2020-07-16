@@ -8,16 +8,18 @@
 def digitcount(n):
 	# your code goes here
 	count = 0
-	temp = n
+	n = abs(n)
 	lst = []
+	while (n != 0):
 	
-	n = n % 10
-	lst.append(n)
-	n = n//10
-	print(len(lst))
+		a = n % 10
+		lst.append(a)
+		n = n //10
+	
+	return len(lst)
 	
 		
 
 		
 	
-(digitcount(567))
+(digitcount(-24))
