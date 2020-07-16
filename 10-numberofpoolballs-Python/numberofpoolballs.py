@@ -8,14 +8,16 @@
 # number of rows. For this problem and the next, you should research Triangular Numbers.
 
 def numberofpoolballs(rows):
-	# Your code goes here\\
-	temp = rows
-	c = 0
-	while(temp > 0):
-		c = c + temp
-		temp = temp +1
-	return c
+    sum = 0
+    num = rows
+    while (num > 0):
+        sum += num
+        num -= 1
+    print(sum)
+    return sum
+    
 
+print(numberofpoolballs(1000))
 
 
 
