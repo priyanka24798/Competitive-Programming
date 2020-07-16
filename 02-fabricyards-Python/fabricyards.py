@@ -13,10 +13,15 @@
 
 
 def fun_fabricyards(inches):
-	lst = []
-	lst.append(inches)
-	a = sorted(lst)
-	return lst[0]
+	if inches == 0:
+		return 0
+	if inches == 1:
+		return 1
+	else:
+		yards = (inches + 35)//36
+		return yards
+		
+		
 	# your code goes here
 print(fun_fabricyards(35))
 
