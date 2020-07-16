@@ -13,19 +13,60 @@
 # assert(ishappynumber(98) == False)
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
+def isHappyNumber(num):    
+    rem = sum = 0;    
+        
+    #Calculates the sum of squares of digits    
+    while(num > 0):    
+        rem = num%10;    
+        sum = sum + (rem*rem);    
+        num = num//10;    
+    return sum;    
+        
+num = 82;    
+result = num;    
+     
+while(result != 1 and result != 4):    
+    result = isHappyNumber(result);    
+     
+#Happy number always ends with 1    
+if(result == 1):    
+    print("True")
+#Unhappy number ends in a cycle of repeating numbers which contain 4    
+elif(result == 4):    
+    print("False")
+# def happynumbersum(n):
+#     # your code goes here
+#     rem = sum = 0
+#     while(n):
+#         n = abs(n)
+#         rem = n%10
+#         sum = sum + (rem * rem)
+#         n = n//10
+#     return sum
 
-def ishappynumber(n):
-	sum = 0
-	
-	while (n > 0):
-		a = n % 10
-		sum = sum + (a**2)
-		n = n // 10
-	return sum
-	result = sum
-	if result == 1:
-		return True
-	else:
-		return False
-	# your code goes here
-	
+# def ishappynumber(n):
+#     x = str(happynumbersum(n))
+#     l=[]
+#     for i in range(len(x)):
+#         l.append(x[i])
+#     res = 0
+#     for i in l:
+#         res = res + int(i)*int(i)
+        
+#     a = str(res)
+#     if res == 1:
+#         # print(res)
+        
+#         return True
+#     elif len(a) == 1:
+#         # print(res)
+#         return False
+#     else:
+#         # print(res)
+#         happynumbersum(res)
+        
+    
+
+
+# ishappynumber(97)
