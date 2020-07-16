@@ -4,7 +4,7 @@ from numberofpoolballs import numberofpoolballs
 import pytest
 
 
-@pytest.mark.parametrize('n, result',[
+@pytest.mark.parametrize('rows, result',[
 	(1, 1),
 	(2, 3),
 	(3, 6),
