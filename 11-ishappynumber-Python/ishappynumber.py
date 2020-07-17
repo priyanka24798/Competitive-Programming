@@ -13,26 +13,50 @@
 # assert(ishappynumber(98) == False)
 # assert(ishappynumber(404) == True)
 # assert(ishappynumber(405) == False)
-import math
+# import math
 
-def sqrt(n):
-	return n**2
+# def sqrt(n):
+# 	return n**2
+
+# def ishappynumber(n):
+# 	# your code goes here
+
+# 	if n < 1:
+# 		return False
+	
+# 	while n!=1:
+# 		if len(str(n))==1:
+# 			break
+# 		l=list(str(n))
+# 		l=list(map(int,l))
+# 		l=list(map(sqrt,l))
+# 		n=sum(l)
+# 	if n==1:
+# 		return True
+# 	else:
+# 		return False
+# 	pass
+
+def SquareSum(n): 
+	sum = 0 
+	while(n > 0): 
+		sum = sum + (n % 10) * (n % 10)
+		n = n // 10
+	return sum
 
 def ishappynumber(n):
-	# your code goes here
-
-	if n < 1:
-		return False
+    a = n
+    b = n
+    while(n != 0):
+        a = SquareSum(a) 
+        b = SquareSum(SquareSum(b))
+        
+        if a != b:
+            continue
+        else:
+            break
+    if a == 1:
+        return True
+    else:
+        return False
 	
-	while n!=1:
-		if len(str(n))==1:
-			break
-		l=list(str(n))
-		l=list(map(int,l))
-		l=list(map(sqrt,l))
-		n=sum(l)
-	if n==1:
-		return True
-	else:
-		return False
-	pass
