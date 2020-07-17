@@ -5,5 +5,16 @@
 
 
 def fun_replace(s1, s2, s3):
-	return s1
+	a = s1.strip()
+	b = s2.strip()
+	c = s3.strip()
+	if c in a:
+		print(a)
+	
+	# result = a+ b + c
+
+	# print(result)
+	# return s1
+
+fun_replace("helloworld123", "hello", "345")
 
