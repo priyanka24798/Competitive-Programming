@@ -19,7 +19,7 @@ def fun_applycaesarcipher(msg, shift):
 		if b == ' ':
 			result +=' '
 			pass
-		if (b.isupper()):
+		elif (b.isupper()):
 			result = result + str(chr((ord(b) + shift - 65)% 26 + 65))
 		else:
 			result = result + str(chr((ord(b) + shift -97 )%26 + 97 ))
@@ -28,19 +28,5 @@ def fun_applycaesarcipher(msg, shift):
 
 fun_applycaesarcipher("We Attack At Dawn", 1)
 	
-# def fun_applycaesarcipher(msg, shift):
-# 	s=""
-# 	for i in range (len(msg)):
-# 		letter=msg[i]
-# 		if letter==' ':
-# 			s+=' '
-# 			pass
-# 		elif (letter.islower()):
-# 			s+=str(chr((ord(letter)+shift-97)%26+97))
-# 		else:
-# 			s+=str(chr((ord(letter)+shift-65)%26+65))
-# 	return s
-
-
 
 
