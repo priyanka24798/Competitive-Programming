@@ -8,7 +8,7 @@ def fun_replace(s1, s2, s3):
 	a = s1.strip()
 	b = s2.strip()
 	c = s3.strip()
-	if c in a:
+	if b == c:
 		print(a)
 	
 	# result = a+ b + c
@@ -16,5 +16,5 @@ def fun_replace(s1, s2, s3):
 	# print(result)
 	# return s1
 
-fun_replace("helloworld123", "hello", "345")
+print(fun_replace("helloworld123", "hello", "345"))
 
