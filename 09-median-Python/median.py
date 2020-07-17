@@ -4,5 +4,10 @@
 # element. If the list is empty, return None.
 
 def median(a):
+	return median(a)
+	# b = sorted(a)
+	# n = len(b)
+	# if n % 2 == 0:
+	# 	meadian = 
 	# your code goes here
 	pass
