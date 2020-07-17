@@ -15,13 +15,9 @@ def issorted(a):
 		
 		
 		if(a[i - 1] > a[i]):
-			return True
-		if(a[i-1] < a[i]):
-			return True
+			return False
 		
-		
-
-	return False
+	return True
 	
 	
 
