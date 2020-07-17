@@ -6,10 +6,25 @@
 # the list.
 
 def issorted(a):
-	print(a)
+	n = len(a)
 	b = sorted(a)
-	print(b)
+	if n == 0 or n == 1:
+		return True
+	
+	for i in range(1, n):
+		
+		
+		if(a[i - 1] > a[i]):
+			return True
+		if(a[i-1] < a[i]):
+			return True
+		
+		
+
+	return False
+	
+	
 
 	# your code goes here
-	pass
-issorted([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+	
+print(issorted([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]))
