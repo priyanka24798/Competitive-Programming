@@ -10,14 +10,23 @@ def issorted(a):
 	b = sorted(a)
 	if n == 0 or n == 1:
 		return True
+	lst = []
+	for i in range(n, 0, -1):
+		lst.append(i)
+		
+	if a == b or lst == a:
+		return True
+	else:
+		return False
+
 	
-	for i in range(1, n):
+	# for i in range(1, n):
+    		
 		
+	# 	if(a[i - 1] > a[i]):
+	# 		return False
 		
-		if(a[i - 1] > a[i]):
-			return False
-		
-	return True
+	# return True
 	
 	
 
