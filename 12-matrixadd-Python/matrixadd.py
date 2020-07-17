@@ -18,8 +18,7 @@
 def matrixadd(L, M):
 	a = len(L)
 	b = len(M)
-	if a == b:
-		result = [0][0]
+	
 	if a != b:
 		return None
 	else:
