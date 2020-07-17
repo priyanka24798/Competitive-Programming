@@ -7,13 +7,16 @@ def median(a):
 	
 	b = sorted(a)
 	n = len(b)
+	
 	if n == 0:
 		return None
-	if n % 2 == 0:
+	
+	if n % 2 != 0:
+		meadian = b[n // 2]
+	
+	else:
 		m1 = b[n // 2]
 		m2 = b[(n // 2) - 1]
 		meadian = (m1 + m2)/2
-	else:
-		meadian = b[n // 2]
 
 	return meadian
