@@ -4,10 +4,16 @@
 # element. If the list is empty, return None.
 
 def median(a):
-	return median(a)
-	# b = sorted(a)
-	# n = len(b)
-	# if n % 2 == 0:
-	# 	meadian = 
-	# your code goes here
-	pass
+	
+	b = sorted(a)
+	n = len(b)
+	if n == 0:
+		return None
+	if n % 2 == 0:
+		m1 = b[n // 2]
+		m2 = b[(n // 2) - 1]
+		meadian = (m1 + m2)/2
+	else:
+		meadian = b[n // 2]
+
+	return meadian
