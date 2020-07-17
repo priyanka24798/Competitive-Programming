@@ -6,5 +6,8 @@
 # the list.
 
 def issorted(a):
+	print(a)
+	if type(a) == list:
+		return sorted(a)
 	# your code goes here
 	pass
