@@ -7,8 +7,9 @@
 
 def issorted(a):
 	print(a)
-	if type(a) == list:
-		return sorted(a)
+	b = sorted(a)
+	print(b)
+
 	# your code goes here
 	pass
-issorted([1, 2, 3, 4, 5])
+issorted([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
