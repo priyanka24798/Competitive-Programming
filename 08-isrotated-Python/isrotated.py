@@ -5,5 +5,18 @@
 
 
 def isrotated(str1, str2):
+    
+	a = len(str1)
+	if str1 == str2:
+		return False
+	
+	if a != len(str2):
+		return False
+	for i in range(a):
+		str1 = str1[:1] +str1[0]
+		if str1 == str2:
+			return True
+	
+	return False
 	#Your code goes here
-	pass
+print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ACDEFGHIJKLMNOPQRSTUVWXYZB"))
