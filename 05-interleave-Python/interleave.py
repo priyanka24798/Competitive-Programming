@@ -33,11 +33,11 @@ def fun_interleave(s1,s2):
 		result = ""
 		for i in range(0,nu):
 			result += s1[i] + s2[i]
-		if len(s1) < len(s2):
-			result += s2[nu:len(s2)]
-		else:
-			result += s1[nu:len(s1)]
+			if len(s1) < len(s2):
+				result += s2[nu:len(s2)]
+			else:
+				result += s1[nu:len(s1)]
 
 
 	# print(sr)
-	return sr
+	return result
