@@ -10,36 +10,36 @@
 # assert(applyCaesarCipher("zodiac", -2) == "xmbgya")
 
 
-# def fun_applycaesarcipher(msg, shift):
-# 	result = ""
-	
-# 	for i in range(len(msg)):
-# 		b = msg[i]
-# 		# print(b)
-# 		if b == ' ':
-# 			result +=' '
-# 			pass
-# 		if (b.isupper()):
-# 			result = result + chr((ord(b) + shift - 65)% 26 + 65)
-# 		else:
-# 			result = result + chr((ord(b) + shift -97 )%26 + 97 )
-		
-# 	return result
-
-# fun_applycaesarcipher("We Attack At Dawn", 1)
-	
 def fun_applycaesarcipher(msg, shift):
-	s=""
-	for i in range (len(msg)):
-		letter=msg[i]
-		if letter==' ':
-			s+=' '
+	result = ""
+	
+	for i in range(len(msg)):
+		b = msg[i]
+		# print(b)
+		if b == ' ':
+			result +=' '
 			pass
-		elif (letter.islower()):
-			s+=str(chr((ord(letter)+shift-97)%26+97))
+		if (b.isupper()):
+			result = result + str(chr((ord(b) + shift - 65)% 26 + 65))
 		else:
-			s+=str(chr((ord(letter)+shift-65)%26+65))
-	return s
+			result = result + str(chr((ord(b) + shift -97 )%26 + 97 ))
+		
+	return result
+
+fun_applycaesarcipher("We Attack At Dawn", 1)
+	
+# def fun_applycaesarcipher(msg, shift):
+# 	s=""
+# 	for i in range (len(msg)):
+# 		letter=msg[i]
+# 		if letter==' ':
+# 			s+=' '
+# 			pass
+# 		elif (letter.islower()):
+# 			s+=str(chr((ord(letter)+shift-97)%26+97))
+# 		else:
+# 			s+=str(chr((ord(letter)+shift-65)%26+65))
+# 	return s
 
 
 
