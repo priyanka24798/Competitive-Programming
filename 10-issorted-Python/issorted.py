@@ -11,3 +11,4 @@ def issorted(a):
 		return sorted(a)
 	# your code goes here
 	pass
+issorted([1, 2, 3, 4, 5])
