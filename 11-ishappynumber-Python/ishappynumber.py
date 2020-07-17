@@ -45,6 +45,7 @@ def SquareSum(n):
 	return sum
 
 def ishappynumber(n):
+
     a = n
     b = n
     while(n != 0):
