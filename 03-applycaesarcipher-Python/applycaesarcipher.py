@@ -11,7 +11,19 @@
 
 
 def fun_applycaesarcipher(msg, shift):
-	return ""
+	result = ""
+	
+	for i in range(len(msg)):
+		b = msg[i]
+		if (b.isupper()):
+			result = result + chr((ord(b) + shift - 65)% 26 + 65)
+		else:
+			result = result + chr((ord(b) + shift -97 )%26 + 97 )
+		
+	print(result)
+
+fun_applycaesarcipher("We Attack At Dawn", 1)
+	
 
 
 
