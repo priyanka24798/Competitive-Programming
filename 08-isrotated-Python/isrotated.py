@@ -12,11 +12,19 @@ def isrotated(str1, str2):
 	
 	if a != len(str2):
 		return False
-	for i in range(a):
-		str1 = str1[:1] +str1[0]
+	m = str2[0]
+	i = str1.index(m)
+	if i == 0:
 		if str1 == str2:
 			return True
-	
+		return False
+	result = str2[:(len(str2)-i)]+str1[:i]
+	if result == str2:
+		return True
 	return False
+	
+	
+	
+	
 	#Your code goes here
 print(isrotated("ABCDEFGHIJKLMNOPQRSTUVWXYZ", "ACDEFGHIJKLMNOPQRSTUVWXYZB"))
