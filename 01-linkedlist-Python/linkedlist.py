@@ -18,6 +18,10 @@ class LinkedList(object):
         self.head = head
         
     def append(self, new_element):
+        current = self.head
+        while current.next != 0:
+            current = current.next
+        current.next = new_element
         # Your code goes here
         pass
             
