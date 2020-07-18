@@ -16,29 +16,29 @@ def SquareSum(n):
 		n = n // 10
 	return sum
 
-	def ishappynumber(n):
+def ishappynumber(n):
 
-		a = n
-		b = n
-		count = 0
-		while(n != 0):
-			a = SquareSum(a) 
-			b = SquareSum(SquareSum(b))
-			
-			if a != b:
-				continue
-			else:
-				break
-
-		if a == 1:
-			count = count+1
-			
+	a = n
+	b = n
+	count = 0
+	while(n != 0):
+		a = SquareSum(a) 
+		b = SquareSum(SquareSum(b))
+		
+		if a != b:
+			continue
 		else:
-			return count
+			break
+
+	if a == 1:
+		return True
+		
+	else:
+		return False
 
 def fun_nth_happy_number(n):
 	sum = 0
-	n = 1
+	num = 1
 	if n == 0:
 		return 1
 	while True:
