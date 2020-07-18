@@ -7,6 +7,6 @@
 
 
 
-
 def fun_pascaltrianglevalue(row, col):
+	
 	return 1
