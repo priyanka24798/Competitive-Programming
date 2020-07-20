@@ -19,8 +19,8 @@ def fun_isfactorish(n):
 	for i in n:
 		lst.append(i)
 		int_lst = list(map(int,lst))
-	if set(int_lst) == int_lst:
-		return True
+		if set(int_lst) == int_lst:
+			return False
 	for i in int_lst:
 		if int(n) % i == 0:
 			return True
