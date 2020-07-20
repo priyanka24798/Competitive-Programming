@@ -29,7 +29,7 @@ def fun_isfactorish(n):
 				if int(n) % i == 0:
 					return True
 			return False
-		return False
+		return True
 
 	# return False
 fun_isfactorish(412)
