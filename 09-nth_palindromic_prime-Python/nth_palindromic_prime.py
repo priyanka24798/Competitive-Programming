@@ -22,7 +22,7 @@ def fun_nth_palindromic_prime(n):
 		
 		if prime(n) and palindrome(n):
 			n = n -1
-		num = a+1
+		num = num+1
 
 	return a -1
 	
