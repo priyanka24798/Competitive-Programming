@@ -16,4 +16,4 @@ def fun_isfactorish(n):
 	if len(n) != 3:
 		return False
 	return True
-fun
+fun_isfactorish(435)
