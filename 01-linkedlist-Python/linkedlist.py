@@ -26,6 +26,7 @@ class LinkedList(object):
         pass
             
     def get_position(self, position):
+        
         """Get an element from a particular position.
         Assume the first position is "1".
         Return "None" if position is not in the list."""
