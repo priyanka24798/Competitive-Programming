@@ -10,13 +10,13 @@ def prime(n):
 			return False
 	return True
 
-def plaind(n):
+def palindrome(n):
 	return str(n)==str(n)[::-1]
 
 def fun_nth_palindromic_prime(n):
 	num=1
 	while n>=0:
-		if isprime(num) and ispalin(num):
+		if isprime(num) and palindrome(num):
 			n-=1
 		num+=1
 	return num-1
