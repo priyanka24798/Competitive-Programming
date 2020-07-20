@@ -24,13 +24,13 @@ def fun_isfactorish(n):
 			if (set(int_lst)) == (int_lst):
 				return False
 		
-			for i in int_lst:
-				print(i)
-				if n % i != 0:
-					return False
-				if i == 0:
-					return False
-			return True
+		for i in int_lst:
+			print(i)
+			if n % i != 0:
+				return False
+			if i == 0:
+				return False
+		return True
 	
 
 # 	# return False
