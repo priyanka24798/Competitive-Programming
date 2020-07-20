@@ -13,14 +13,14 @@
 
 def fun_isfactorish(n):
 	n = str(n)
-	if len(n) != 3:
+	if len(str(n)) != 3:
 		return False
 	lst = []
 	for i in n:
 		lst.append(i)
 		int_lst = list(map(int,lst))
-	if i in int_lst:
-		temp = n % i
-		print(int_lst)
-	# return True
+	for i in int_lst:
+		if int(n) % i == 0:
+			return True
+	return False
 fun_isfactorish(435)
