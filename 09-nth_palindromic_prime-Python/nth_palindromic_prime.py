@@ -18,6 +18,6 @@ def fun_nth_palindromic_prime(n):
 	while n>=0:
 		if prime(N) and palindrome(N):
 			n = n -1
-		num=1
-	return num-1
+		number = number + 1
+	return number -1
 	
