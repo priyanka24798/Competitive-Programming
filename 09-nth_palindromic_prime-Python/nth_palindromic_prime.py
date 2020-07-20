@@ -17,7 +17,8 @@ def palindrome(n):
 
 
 def fun_nth_palindromic_prime(n):
+	a = 0
 	if prime(n) and palindrome(n):
 		return n -1
-	return False
+	return 
 	
