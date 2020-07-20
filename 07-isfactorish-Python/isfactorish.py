@@ -28,6 +28,8 @@ def fun_isfactorish(n):
 				print(i)
 				if int(n) % i == 0:
 					return True
+				if i == 0:
+					return False
 			return False
 		return True
 
