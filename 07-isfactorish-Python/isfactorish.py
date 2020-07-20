@@ -18,7 +18,7 @@ def fun_isfactorish(n):
 		return False
 	else:
 		lst = []
-		n = abs(n)
+		n = str(abs(n))
 		for i in n:
 			lst.append(i)
 		int_lst = list(map(int,lst))
