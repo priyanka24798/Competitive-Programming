@@ -17,12 +17,12 @@ def binary_search(input_array, value):
         first = input_array[0]
         last = len(input_array)
         mid = last//2
-        # while(value != input_array[mid]):
-        if value > input_array[mid]:
-            first = mid + 1
-        else:
-            last = mid
-        mid = (first + last)//2
+        while(value != input_array[mid]):
+            if value > input_array[mid]:
+                first = mid + 1
+            else:
+                last = mid
+            mid = (first + last)//2
         return mid
 
 
