@@ -27,6 +27,6 @@ def fun_isfactorish(n):
 				return True
 		return False
 
-	# if set(int_lst) != int_lst:
-	# 	return False
+	if set(int_lst) != int_lst:
+		return False
 fun_isfactorish(412)
