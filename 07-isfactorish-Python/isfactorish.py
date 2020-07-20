@@ -26,11 +26,11 @@ def fun_isfactorish(n):
 		
 			for i in int_lst:
 				print(i)
-				if int(n) % i != 0:
+				if n % i != 0:
 					return False
 				if i == 0:
 					return False
-			return True
+			return False
 	
 
 	# return False
