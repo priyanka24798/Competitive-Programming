@@ -20,7 +20,11 @@ def fun_isfactorish(n):
 		lst.append(i)
 		int_lst = list(map(int,lst))
 	for i in int_lst:
-		if int(n) % i == 0:
-			return True
+		try:
+		
+			if int(n) % i == 0:
+				return True
+		except:
+			return 
 	return False
 fun_isfactorish(435)
