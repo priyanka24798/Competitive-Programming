@@ -17,12 +17,12 @@ def palindrome(n):
 
 
 def fun_nth_palindromic_prime(n):
-	a = 1
+	num = 1
 	while (n > 0):
 		
 		if prime(n) and palindrome(n):
 			n = n -1
-		a = a+1
+		num = a+1
 
 	return a -1
 	
