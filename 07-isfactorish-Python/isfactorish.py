@@ -20,8 +20,8 @@ def fun_isfactorish(n):
 	for i in a:
 		lst.append(i)
 		int_lst = list(map(int,lst))
-		if set(int_lst) != int_lst:
-			return False
+	if set(int_lst) != int_lst:
+		return False
 	for i in int_lst:
 		print(i)
 		if int(n) % i == 0:
