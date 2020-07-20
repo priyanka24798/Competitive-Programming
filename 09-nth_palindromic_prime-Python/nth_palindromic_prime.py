@@ -14,9 +14,9 @@ def palindrome(n):
 	return str(n)==str(n)[::-1]
 
 def fun_nth_palindromic_prime(n):
-	number=1
+	N=1
 	while n>=0:
-		if prime(num) and palindrome(num):
+		if prime(number) and palindrome(num):
 			n-=1
 		num+=1
 	return num-1
