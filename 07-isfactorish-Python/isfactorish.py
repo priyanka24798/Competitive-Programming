@@ -25,6 +25,6 @@ def fun_isfactorish(n):
 			if int(n) % i == 0:
 				return True
 		except:
-			return 
+			return False
 	return False
 fun_isfactorish(435)
