@@ -30,7 +30,7 @@ def fun_isfactorish(n):
 					return False
 				if i == 0:
 					return False
-		return True
+			return True
 	
 
 	# return False
