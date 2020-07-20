@@ -12,6 +12,7 @@ def isrotation(x, y):
 	if len(y) != len(x):
 		return False
 	else:
+		z= ""
 		z == y[::-1]
 		if( z == x):
 			return True
