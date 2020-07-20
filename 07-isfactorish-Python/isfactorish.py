@@ -18,7 +18,7 @@ def fun_isfactorish(n):
 	lst = []
 	for i in n:
 		lst.append(i)
-		int_last = list(map(int,lst))
-		print(lst)
+		int_lst = list(map(int,lst))
+		print(int_lst)
 	# return True
 fun_isfactorish(435)
