@@ -16,4 +16,5 @@ def fun_isfactorish(n):
 	while (n > 0):
 		temp = n % 10
 		n = n // 10
-		
+		lst.append(n)
+	print(lst)
