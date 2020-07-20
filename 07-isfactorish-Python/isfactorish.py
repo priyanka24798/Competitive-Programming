@@ -12,13 +12,7 @@
 
 
 def fun_isfactorish(n):
-	n = str(n)
-	a = abs(n)
-	if len(n) > 3:
-		return False
-	else:
-		temp = a 
-    		
-		
-			
-
+	lst = []
+	while (n > 0):
+		temp = n % 10
+		n 
