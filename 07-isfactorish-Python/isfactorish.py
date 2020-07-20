@@ -15,5 +15,9 @@ def fun_isfactorish(n):
 	n = str(n)
 	if len(n) != 3:
 		return False
+	lst = []
+	for i in n:
+		lst.append(i)
+		
 	return True
 fun_isfactorish(435)
