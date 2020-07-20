@@ -13,4 +13,4 @@ def fun_nth_palindromic_prime(n):
 				if (n % i) == 0:
 					return False
 				return True
-	return 0
+	
