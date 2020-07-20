@@ -20,7 +20,7 @@ def fun_isfactorish(n):
 		lst.append(i)
 		int_lst = list(map(int,lst))
 	if i in int_lst:
-		temp = n
+		temp = n % i
 		print(int_lst)
 	# return True
 fun_isfactorish(435)
