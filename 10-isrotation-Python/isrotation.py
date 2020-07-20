@@ -6,5 +6,6 @@
 # is a rotation of itself.
 
 def isrotation(x, y):
+    	
 	# Your code goes here
 	pass
