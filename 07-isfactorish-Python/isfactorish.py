@@ -21,7 +21,7 @@ def fun_isfactorish(n):
 		for i in a:
 			lst.append(i)
 			int_lst = list(map(int,lst))
-			if len(set(int_lst)) != int_lst:
+			if len(set(int_lst)) != len(int_lst):
 				return False
 		
 			for i in int_lst:
