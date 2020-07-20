@@ -14,7 +14,7 @@
 def fun_isfactorish(n):
 	a = str(n)
 	# n = abs(n)
-	if len(str((abs(n))))!=3 or set(int(n)) != n:
+	if len(str((abs(n))))!=3:
 		return False
 	else:
 		lst = []
