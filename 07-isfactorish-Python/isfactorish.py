@@ -13,7 +13,7 @@
 
 def fun_isfactorish(n):
 	a = str(n)
-	n = abs(n)
+	# n = abs(n)
 	if len(str((n)))!=3:
 		return False
 	else:
