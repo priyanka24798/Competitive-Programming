@@ -16,20 +16,20 @@ def fun_isfactorish(n):
 	n = abs(n)
 	if len(str((n)))!=3:
 		return False
+	else:
+		lst = []
+		for i in a:
+			lst.append(i)
+			int_lst = list(map(int,lst))
+			if len(set(int_lst)) != int_lst:
+				return False
 		
-	lst = []
-	for i in a:
-		lst.append(i)
-		int_lst = list(map(int,lst))
-		if set(int_lst) != int_lst:
+			for i in int_lst:
+				print(i)
+				if int(n) % i == 0:
+					return True
 			return False
-	
-		for i in int_lst:
-			print(i)
-			if int(n) % i == 0:
-				return True
 		return False
-	return False
 
 	# return False
 fun_isfactorish(412)
