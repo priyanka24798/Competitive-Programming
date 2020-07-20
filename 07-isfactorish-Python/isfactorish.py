@@ -23,7 +23,8 @@ def fun_isfactorish(n):
 		if set(int_lst) != int_lst:
 			return False
 	for i in int_lst:
+		print(i)
 		if int(n) % i == 0:
 			return True
 	return False
-fun_isfactorish(435)
+fun_isfactorish(412)
