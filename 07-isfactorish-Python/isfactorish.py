@@ -12,11 +12,12 @@
 
 
 def fun_isfactorish(n):
-	n = str(n)
-	if len(str(n)) != 3:
+	a = str(n)
+	n = abs(n)
+	if len(str((n)))!=3:
 		return False
 	lst = []
-	for i in n:
+	for i in a:
 		lst.append(i)
 		int_lst = list(map(int,lst))
 		if set(int_lst) != int_lst:
