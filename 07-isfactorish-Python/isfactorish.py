@@ -18,6 +18,6 @@ def fun_isfactorish(n):
 	lst = []
 	for i in n:
 		lst.append(i)
-		
-	return True
+		print(lst)
+	# return True
 fun_isfactorish(435)
