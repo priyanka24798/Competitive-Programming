@@ -15,7 +15,9 @@ def fun_isfactorish(n):
 	if len(n) <= 2 and len(n) > 3:
 		return False
 	else:
-		temp = n
+		while (len(n) == 3):
+			temp = n%10
+			n = n//10
 		
 			
 
