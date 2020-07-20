@@ -12,5 +12,10 @@
 
 
 def fun_isfactorish(n):
-	return False
+	if len(n) <= 2 and len(n) > 3:
+		return False
+	else:
+		temp = n
+		
+			
 
