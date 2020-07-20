@@ -24,5 +24,5 @@ def fun_nth_palindromic_prime(n):
 			n = n -1
 		a = a+1
 
-	return 
+	return a -1
 	
