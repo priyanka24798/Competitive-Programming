@@ -14,7 +14,7 @@
 def fun_isfactorish(n):
 	a = str(n)
 	# n = abs(n)
-	if len(str((n)))!=3:
+	if len(str((abs(n))))!=3:
 		return False
 	else:
 		lst = []
@@ -30,22 +30,22 @@ def fun_isfactorish(n):
 				return False
 			if i == 0:
 				return False
-		return True
+			return True
 	
 
 # 	# return False
-def fun_isfactorish(n):
-	if len(str(abs(n)))!=3:
-		return False
-	else:
-		li= list(str(abs(n)))
-		li=list(map(int,li))
-		if len(li)!=len(set(li)):
-			return False
-		for i in li:
-			if i==0:
-				return False
-			elif n%i!=0:
-				return False
-		return True
-fun_isfactorish(412)
+# def fun_isfactorish(n):
+# 	if len(str(abs(n)))!=3:
+# 		return False
+# 	else:
+# 		li= list(str(abs(n)))
+# 		li=list(map(int,li))
+# 		if len(li)!=len(set(li)):
+# 			return False
+# 		for i in li:
+# 			if i==0:
+# 				return False
+# 			elif n%i!=0:
+# 				return False
+# 		return True
+# fun_isfactorish(412)
