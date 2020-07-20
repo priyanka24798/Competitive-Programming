@@ -21,9 +21,9 @@ def fun_isfactorish(n):
 		n = str(abs(n))
 		for i in n:
 			lst.append(i)
-		int_lst = list(map(int,lst))
-		if len(set(int_lst)) == len(int_lst):
-			return False
+			int_lst = list(map(int,lst))
+			if len(set(int_lst)) == len(int_lst):
+				return False
 		
 		for i in int_lst:
 			print(i)
