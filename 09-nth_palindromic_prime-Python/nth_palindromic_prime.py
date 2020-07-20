@@ -17,7 +17,7 @@ def fun_nth_palindromic_prime(n):
 	N = 1
 	while n>=0:
 		if isprime(N) and ispalindrome(N):
-			n -1
+			n -= 1
 		N += 1
 	return N - 1
 	
