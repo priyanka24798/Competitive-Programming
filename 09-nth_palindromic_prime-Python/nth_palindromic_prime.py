@@ -19,5 +19,5 @@ def fun_nth_palindromic_prime(n):
 		if prime(N) and palindrome(N):
 			n = n -1
 		number = number + 1
-	return number -1
+	return number - 1
 	
