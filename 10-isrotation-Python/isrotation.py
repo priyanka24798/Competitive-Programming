@@ -13,8 +13,10 @@ def isrotation(x, y):
 		return False
 	else:
 		z= ""
-		z == y[::-1]
-		if( z == x):
+		z = x + x
+		a = ""
+		a = x + x[::-1]
+		if(z.count(y) > 0) or (a.count(y) > 0):
 			return True
 		return False
 			
