@@ -5,7 +5,19 @@
 
 
 
-def fun_alternatingsum(a): 
-	return 0
+def fun_alternatingsum(a):
+	if a is None:
+		return 0
+	else:
+		result = 0
+		for i in range(len(a)):
+			# print(i)
+			if i % 2 == 0:
+				result = result + a[i]
+			else:
+				result = result - a[i]
+		return result 
+			
+
 
 
