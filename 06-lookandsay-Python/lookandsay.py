@@ -8,5 +8,35 @@
 # lookAndSay([3,3,8,3,3,3,3]) == [(2,3),(1,8),(4,3)]
 
 def lookandsay(a):
+	count = 0
+	result = tuple()
+	lst =[]
+	if a == []:
+		return lst
+	else:
+		for i in range(0,len(a)):
+			if i==0:
+				count = 1
+				for j in range (i +1, len(a)):
+					if a[i] == a[j]:
+						count += 1
+					else:
+						break
+						count = 1
+				result = count,a[i]
+				lst.append(result)
+			else:
+				if a[i] == a[i -1]:
+					continue
+				else:
+					count =0
+					for j in range (i, len(a)):
+						if a[i] == a[j]:
+							count = count + 1
+					result = count,a[i]
+					lst.append(result)
+		return lst
 	# Your code goes here
 	pass
+
+	lookandsay([3,3,8,-10,-10,-10])
