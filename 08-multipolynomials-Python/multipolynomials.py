@@ -6,5 +6,14 @@
 # And so this returns the list [8, 10, 12, 15].
 
 def multipolynomials(p1, p2):
+	a = len(p1)
+	b = len(p2)
+	result = ((a + b)-1) * [0]
+	for i in range(len(p1)):
+		for j in range(len(p2)):
+			index = i + j
+			result[index] += p1[i]*p2[j]
+	return result
+
 	# Your code goes here
 	pass
