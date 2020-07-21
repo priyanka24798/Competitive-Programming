@@ -9,6 +9,13 @@
 
 
 
-def fun_getaverage(s): 
-	return 0.0
+def fun_getaverage(s):
+	s = s.split(",")
+	lst = []
+	for i in s:
+		lst.append(i)
+		if type(lst[i]) == str:
+			return 0
+			
+fun_getaverage("13,excused,14,absent")
 
