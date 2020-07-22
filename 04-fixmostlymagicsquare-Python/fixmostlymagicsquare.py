@@ -7,5 +7,7 @@
 
 
 def fixmostlymagicsquare(L):
+	length = Len(L)
+	s = 
 	pass
 	# Your code goes here
