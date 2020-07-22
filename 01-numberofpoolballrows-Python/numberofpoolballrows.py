@@ -7,15 +7,16 @@
 
 def fun_numberofpoolballrows(balls):
 	row = 1
-	result= []
+	# result= []
 	if balls == 1:
 		return 1
 	else:
-		for i in range(1, balls):
-			row = row + i
-			result.append(row)
-			print(result)
-	
+		while (balls > 1):
+			balls = balls - row
+			row = row +1
+		return row -1
+
+			
     		
 		
 fun_numberofpoolballrows(7)
