@@ -6,9 +6,11 @@
 import numpy as np
 
 def fun_matrixmultiply(m1, m2):
-    A = np.array(m1)
-    B = np.array(m2)
-    C = np.mat(A) * np.mat(B)
-    return C
-     
+    try:
+        A = np.array(m1)
+        B = np.array(m2)
+        C = np.matmul(A,B)
+        return C.tolist()
+    except:
+        return None
     
