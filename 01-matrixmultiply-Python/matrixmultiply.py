@@ -5,3 +5,12 @@
 
 import numpy as np
 
+def fun_matrixmultiply(m1, m2):
+    if len(m1) == len(m2):
+        
+        a = np.array(m1)
+        b = np.array(m2)
+        c = a.any().dot(b)
+        return c
+     
+    return None
