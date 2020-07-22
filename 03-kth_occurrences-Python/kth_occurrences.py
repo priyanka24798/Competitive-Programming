@@ -5,6 +5,16 @@
 
 
 def fun_kth_occurrences(s, n):
-	return 'a'
+	d = {}
+	for char in s:
+		if char not in d:
+			d[char] = s.count(char)
+	f = sorted(d.values(), reverse= True)
+	val = f[n-1]
+	for item in d:
+		if d[item] == val:
+			result = item
+			break
+	return result
 
 
