@@ -6,17 +6,17 @@
 # are not legal values, return None, instead of crashing. 
 
 def fun_pascaltrianglevalue(row, col):
-    if row > col:
-        num = factorial(row)
+    if row >= col:
+        num = fact(row)
         
-        den = factorial(col) - (factorial(row)- factorial(col))
+        den = fact(col) * (fact(row -col))
         result = num // den
         return result
     else:
         return 0 
 
 
-def factorial(num):
+def fact(num):
     res = 1
     for i in range(1,num+1):
         res = res * i
