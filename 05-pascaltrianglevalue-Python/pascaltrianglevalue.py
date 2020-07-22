@@ -5,47 +5,21 @@
 # each row starts at column 0. If either row or col 
 # are not legal values, return None, instead of crashing. 
 
-def factorial(num):
-    res = 1
-    for i in range(1,num+1):
-        res = res * i
-    return res
-
 def fun_pascaltrianglevalue(row, col):
     if row > col:
         num = factorial(row)
         
-        den = (factorial(col)) - ((factorial(row)- factorial(col)))
+        den = factorial(col) - (factorial(row)- factorial(col))
         result = num // den
         return result
     else:
         return 0 
 
 
-# def factorial(num):
-#     res = 1
-#     for i in range(1,num+1):
-#         res = res * i
-#     return res
+def factorial(num):
+    res = 1
+    for i in range(1,num+1):
+        res = res * i
+    return res
 
 fun_pascaltrianglevalue(1,1)
-# def fact(n):
-    	
-# 	result = 1
-# 	for i in range(1, n+1):
-# 		result = result * i
-# 	return result 
-
-
-# def fun_pascaltrianglevalue(row, col):
-# 	if row > col:
-		
-# 		numerator = fact(row)
-# 		denominator = fact(col) -(fact(row) - fact(col))
-# 		result = numerator // denominator
-# 		return result
-		
-# 	else:
-# 		# return 0
-		
-	
