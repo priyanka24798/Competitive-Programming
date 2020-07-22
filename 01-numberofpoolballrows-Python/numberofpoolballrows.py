@@ -11,9 +11,10 @@ def fun_numberofpoolballrows(balls):
 	if balls == 1:
 		return 1
 	else:
-		for i in range(1, len(str(balls))):
-			result.append(i)
-		print(result)
+		for i in range(1, balls):
+			row = row + i
+			result.append(row)
+			print(result)
 	
     		
 		
