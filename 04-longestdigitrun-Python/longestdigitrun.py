@@ -6,7 +6,11 @@
 # as does longestDigitRun(-677886).
 
 def longestdigitrun(n):
-	try:
+	a = set(str(n))
+	if len(str(n)) != (len(a)):
+		return 1
+		# return 1
+	elif len(str(n)) == (len(a)):
 		a = str(abs(n))
 		result = {}
 		for i in a:
@@ -17,8 +21,7 @@ def longestdigitrun(n):
 		longest = max(result, key = result.get)
 		# print(str(longest))
 		return int(longest)
-	except:
-		return 1
+					
 	# print(a)
 
 print (longestdigitrun(-677886))
