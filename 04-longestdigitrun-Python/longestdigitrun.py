@@ -14,7 +14,7 @@ def longestdigitrun(n):
 				result[i] += 1
 			else:
 				result[i] = 1
-		longest = min(result, key = result.get)
+		longest = max(result, key = result.get)
 		# print(str(longest))
 		return int(longest)
 	except:
