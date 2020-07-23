@@ -6,13 +6,15 @@
 
 
 def fun_carrylessadd(x, y):
-	if len(str(x)) and len(str(y)) ==1:		
-		a = int(x) % 10
-		b = int(y) % 10
-		c = (x + y) % 10
-		return c
-	else:
-    		
-
-		return 0
-
+	result = 0
+	mul = 1
+	while x or y:				
+		a = (x) % 10
+		b = (y) % 10
+		c = (a + b) % 10
+		result = (c * mul) + result
+		x = x//10
+		y = y //10
+		mul = mul *10
+	return result
+		
