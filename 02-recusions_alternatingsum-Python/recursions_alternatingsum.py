@@ -4,14 +4,16 @@
 # (that is, 3). If L is empty, return 0. You may not use loops/iteration in this problem.
 
 
-def fun_recursions_alternatingsum(l): 
+def fun_recursions_alternatingsum(l):
+	result = 0
 	if (len(l) == 0):
 		return 0
 
-	return alternating(l, position, result)
+	return alternating(l, 0, result)
 
 def alternating(l, position, result):
-	result = 0
+	if (len(l) == position):
+    		return result
 	if position % 2 == 0:
 		result = result + l[position]
 	else:
