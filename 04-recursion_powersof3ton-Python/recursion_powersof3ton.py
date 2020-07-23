@@ -5,7 +5,7 @@
 
 def recursion_powersof3ton(n):
 	n = int(n)
-	if n  <= 0 or n <= 1:
+	if n  <= 0 or n < 1:
 		return None
 	if n == 1:
 		return [1]
