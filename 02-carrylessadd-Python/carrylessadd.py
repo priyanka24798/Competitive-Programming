@@ -6,5 +6,13 @@
 
 
 def fun_carrylessadd(x, y):
-	return 0
+	if len(str(x)) and len(str(y)) ==1:		
+		a = int(x) % 10
+		b = int(y) % 10
+		c = (x + y) % 10
+		return c
+	else:
+    		
+
+		return 0
 
