@@ -10,3 +10,13 @@
 
 def fun_recursion_onlyevendigits(l): 
 		return []
+
+
+def resultant(l, n, position, new_lst):
+	if (position >= n):
+		return new_lst
+	new_lst.append(evendigit(l[position]), len(str(l[position])),0,"")
+	return resultant(l,n,position +1, new_lst)
+
+def evendigit(s, slen, sposition, new_strlst):
+	if 
