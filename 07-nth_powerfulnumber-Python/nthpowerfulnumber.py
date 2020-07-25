@@ -7,24 +7,25 @@
 # To find the prime factor :
 
 
-def ispowerfulnumber(n) :
+def ispowerful(n):
+    	
 	i = 2
-	while n > 1 :
-		if n % i == 0 :
-			if n % (i**2) != 0 :
+	while (n > 1):
+		if n % i == 0:	
+			if n % (i ** 2) != 0:
 				return False
-			while n > 1 and n % i == 0 :
-				n = n // i
-		else :
-			i += 1
+			while  n > 1 and n % 2 == 0:
+				n = n // i 
+		else:
+			i = i + 1
 	return True
-    		
+
 
 def nthpowerfulnumber(n):
-	# Your code goes here
-	list = []
-	for i in range(1001) :
-		if ispowerfulnumber(i) :
-				list.append(i)
-	print(list)
-	return list[n+1]
+
+
+	lst = []
+	for i in range (1001):
+		if ispowerful(i):
+			lst.append(i)
+	return lst[n +1]
