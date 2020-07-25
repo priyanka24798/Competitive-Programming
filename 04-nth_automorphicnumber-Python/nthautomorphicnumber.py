@@ -15,7 +15,7 @@ def isautomorphic(n):
 
 def nthautomorphicnumbers(n):
 	count = 0
-	i = 1
+	i = 0
 	while count < n:
 		if isautomorphic(i):
 			count = count + 1
