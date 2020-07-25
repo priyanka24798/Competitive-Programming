@@ -20,6 +20,5 @@ def nthautomorphicnumbers(n):
 		if isautomorphic(i):
 			count = count + 1
 		i = i + 1
-	return i
-	# Your code goes here
-	pass
+	return i-1
+	
