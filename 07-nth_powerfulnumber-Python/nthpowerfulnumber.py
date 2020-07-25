@@ -24,8 +24,8 @@ def ispowerful(n):
 def nthpowerfulnumber(n):
 
 
-	lst = []
+	list = []
 	for i in range (1001):
 		if ispowerful(i):
-			lst.append(i)
-	return lst[n +1]
+			list.append(i)
+	return list[n +1]
