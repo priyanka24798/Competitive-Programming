@@ -21,8 +21,7 @@ def ispowerful(n):
 
 
 def nthpowerfulnumber(n):
-	# if n == 0:
-	# 	return 1
+
 
 	lst = []
 	for i in range (1000):
