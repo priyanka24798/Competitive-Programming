@@ -14,7 +14,7 @@ def ispronic(n):
     		
 
 def nthpronicnumber(n):
-	count = 1
+	count = 0
 	i = 1
 	while( count < n):
 		if ispronic(n):
