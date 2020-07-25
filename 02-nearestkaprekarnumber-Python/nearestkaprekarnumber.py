@@ -10,7 +10,53 @@
 
 
 
+
+from __future__ import division
 import math
 
+
+def iskaprekanumber(num):
+    ans =num**2
+    s= str(ans)
+    flag = False
+    res= ""
+    for i in range(0,len(s)):
+        res= res+s[i]
+        if(i == len(s)-2):
+            res1 = int(s[i+1])
+        elif(i == len(s)-1):
+            res1 = 0
+        else:
+            res1 = int(s[i+1:])
+        # print(res)
+        # print(res1)
+        if(int(res) + res1 == num):
+            return True
+    return False
+#print(iskaprekanumber(9))
+
 def fun_nearestkaprekarnumber(n):
-    return 1
+    m = str(n)
+    if len(m) == 2:
+        start = n -10
+        end = n + 10
+    if len(m) == 3:
+        start = n - 100
+        end = n + 100
+    else:
+        start = n - 1500
+        end = n + 1500
+    l = []
+    for i in range(start,end+1):
+        k = float(i)
+        ans = math.log10(k)- math.floor(math.log10(k))
+        if(ans != 0 and iskaprekanumber(i) == True):
+            l.append(i)
+    s =[]
+    for j in l:
+        s.append(abs(j - n))
+    ans = s.index(min(s))
+            
+    return l[ans]
+
+print(fun_nearestkaprekarnumber(45))
