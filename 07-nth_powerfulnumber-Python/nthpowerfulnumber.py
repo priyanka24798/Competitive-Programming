@@ -11,12 +11,11 @@ def ispowerful(n):
 	
 	i = 2
 	while (n > 1):
-		if n % i == 0:
-			
+		if n % i == 0:	
 			if n % (i ** 2) != 0:
 				return False
-			while ( n > 1) and n % 2 == 0:
-				n = n // i 
+			# while ( n > 1) and n % 2 == 0:
+			n = n // i 
 	return True
 
 
