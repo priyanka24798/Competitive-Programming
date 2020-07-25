@@ -16,8 +16,8 @@ def ispowerful(n):
 				return False
 			while ( n > 1) and n % 2 == 0:
 				n = n // i 
-			else:
-				i = i + 1
+		else:
+			i = i + 1
 	return True
 
 
