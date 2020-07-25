@@ -14,7 +14,7 @@ def ispowerful(n):
 		if n % i == 0:	
 			if n % (i ** 2) != 0:
 				return False
-			while  n > 1 and n % 2 == 0:
+			while  n > 1 and n % i == 0:
 				n = n // i 
 		else:
 			i = i + 1
