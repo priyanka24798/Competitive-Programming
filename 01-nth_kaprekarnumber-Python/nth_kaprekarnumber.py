@@ -7,7 +7,57 @@
 # and returns the nth Kaprekar number, where as usual we start counting at n==0.
 
 
-import math
+# import math
 
+# def fun_nth_kaprekarnumber(n):
+#     if(n == 0):
+#         return 1
+#     else:
+
+#         # # a = n ** 2
+#         # count = 0
+        
+#         # result = 1
+#         # while (count < n):
+            
+#         #     result = result +1
+#         #     a = int(math.pow(result, 2))
+#         #     temp = a
+#         #     multiplier = 0
+#         #     while (temp > 0):
+#         #         multiplier = multiplier +1
+#         #         temp = temp // 10
+#         #     for i in range (multiplier):
+#         #         if (temp % ((10) ** i) != 0):
+#         #             if result == ((temp // ((10)**i)) + (temp % ((10) ** i))):
+#         #                 count = count +1
+#         #                 break
+#         # return result
+
+
+# print(fun_nth_kaprekarnumber(5))
+import math
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    if(n==0):
+        return 1
+    c=0
+    i=1
+    while(c<n):
+        i=i+1  
+        q=int(math.pow(i,2))
+        m=0
+        f=q
+        while(f>0):
+            m=m+1
+            f=f//10
+        for j in range(m):
+            t=q//((10)**j)
+            p=q%((10)**j)
+            if(p!=0) :
+                if(i==t+p):
+
+                    c=c+1
+                    break
+                
+    return i
+
