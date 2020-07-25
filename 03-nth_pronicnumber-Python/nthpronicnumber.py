@@ -16,8 +16,8 @@ def ispronic(n):
 def nthpronicnumber(n):
 	count = 0
 	i = 1
-	while( count < n):
-		if ispronic(n):
+	while count < n:
+		if ispronic(i):
 			count = count +1
 		i = i + 1
 	return  i - 1
