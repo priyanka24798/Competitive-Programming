@@ -8,5 +8,10 @@
 # if s does not contain any alphabetic characters, the result should be the empty string ("")
 
 def leastfrequentletters(s):
-	# Your code goes here
-	pass
+	result = ""
+	d = ord("a")
+	for c in s.lower():
+		if  (c.isalpha() and (ord(c) >= d)):
+			result += str(ord(c) - d) + chr(d)
+			d += 1
+	return result
