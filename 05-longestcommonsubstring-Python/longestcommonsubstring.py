@@ -8,5 +8,16 @@
 # longestCommonSubstring("abcABC", "zzabZZAB") returns "AB" and not "ab"
 
 def longestcommonsubstring(s1, s2):
-    # Yourcode goes here
-    pass
+    result = ""
+    m = len(s1)
+    n = len(s2)
+    for i in range (0,m):
+        k = 1
+        for j in range(0,n):
+            while (i + k <= m and j + k <= n) and (s1[ i: i + k] == s2[j: j + k]):
+                if (len(result) <= len(s1[i: i + k])):
+                    result = s1[i: i + k]
+                k = k + 1
+                
+    return result
+ 
