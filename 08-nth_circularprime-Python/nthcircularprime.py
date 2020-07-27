@@ -10,11 +10,12 @@ def isprime(n):
 	if n < 2:
 		return False
 	else:
-		for i in range(2, (n//2) + 1):
+		for i in range(2, (n)):
 			if n % i == 0:
 				return False
 				break
 		return True
+
 
 def iscircular(n):
 	count = 0
@@ -25,8 +26,8 @@ def iscircular(n):
 	num = n
 	while (isprime(num)):
 		rem = num % 10
-		div = num / 10
-		num = ((math.pow(10, count - 1 ))* rem ) + div
+		div = num // 10
+		num = int((math.pow(10, count - 1 ))* rem ) + div
 		if num == n:
 			return True
 	return False
