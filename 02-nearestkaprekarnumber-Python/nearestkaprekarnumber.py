@@ -15,48 +15,60 @@ from __future__ import division
 import math
 
 
-def iskaprekanumber(num):
-    ans =num**2
-    s= str(ans)
-    flag = False
-    res= ""
-    for i in range(0,len(s)):
-        res= res+s[i]
-        if(i == len(s)-2):
-            res1 = int(s[i+1])
-        elif(i == len(s)-1):
-            res1 = 0
-        else:
-            res1 = int(s[i+1:])
-        # print(res)
-        # print(res1)
-        if(int(res) + res1 == num):
+def isKaprekarNumber(num):
+    if (num == 1): return True
+    nsquared = num**2
+    count = 1 # count tells us what exponent to use
+    right = nsquared%10
+    left = nsquared/10
+    while (left!=0):
+        if (right != 0) and (left+right == num):
             return True
+        digit = left%10
+        right = right+((10**count)*digit)
+        left = left//10
+        count += 1
     return False
-#print(iskaprekanumber(9))
 
 def fun_nearestkaprekarnumber(n):
-    m = str(n)
-    if len(m) == 2:
-        start = n -10
-        end = n + 10
-    if len(m) == 3:
-        start = n - 100
-        end = n + 100
-    else:
-        start = n - 1500
-        end = n + 1500
-    l = []
-    for i in range(start,end+1):
-        k = float(i)
-        ans = math.log10(k)- math.floor(math.log10(k))
-        if(ans != 0 and iskaprekanumber(i) == True):
-            l.append(i)
-    s =[]
-    for j in l:
-        s.append(abs(j - n))
-    ans = s.index(min(s))
+    offset = n - int(n)
+    upper = int(n)
+    lower = int(n)
+    while (not isKaprekarNumber(upper)) and (not isKaprekarNumber(lower)):
+        upper+=1
+        lower-=1
+    if isKaprekarNumber(lower):
+        if (offset > 0.5):
+            upper += 1
+        upperDisp = upper - n
+        lowerDisp = n - lower
+        if (isKaprekarNumber(upper) and (upperDisp < lowerDisp)):
+            return upper
+        return lower
+    return upper
+
+# def fun_nearestkaprekarnumber(n):
+#     m = str(n)
+#     if len(m) == 2:
+#         start = n -10
+#         end = n + 10
+#     if len(m) == 3:
+#         start = n - 100
+#         end = n + 100
+#     else:
+#         start = n - 1500
+#         end = n + 1500
+#     l = []
+#     for i in range(start,end+1):
+#         k = float(i)
+#         ans = math.log10(k)- math.floor(math.log10(k))
+#         if(ans != 0 and iskaprekanumber(i) == True):
+#             l.append(i)
+#     s =[]
+#     for j in l:
+#         s.append(abs(j - n))
+#     ans = s.index(min(s))
             
-    return l[ans]
+#     return l[ans]
 
 print(fun_nearestkaprekarnumber(45))
