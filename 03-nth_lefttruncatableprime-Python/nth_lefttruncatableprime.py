@@ -28,5 +28,20 @@ def digits(n):
         count = count + 1
     return count
 
+def truncatable(n):
+    if isprime(n) == False:
+        return False
+    else:
+        digit = digits(n)
+        for i in range(1,digit) :
+            k = n % (10**i) 
+            if isprime(k) == False :
+                return False
+        return True
+
 def fun_nth_lefttruncatableprime(n):
-    return 1
+    lst = []
+    for i in range(500):
+        if truncatable(i):
+            lst.append(i)
+    return lst[n]
