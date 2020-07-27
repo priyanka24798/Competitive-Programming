@@ -8,15 +8,16 @@
 # Also the function returns the empty list if the original list is empty. 
 # Remember to not use strings. You may not use loops/iteration in this problem.
 
+
+
+def isevendigit(n):
+	temp = n % 10
+	if n % 2 == 0:
+		return isevendigit(n // 10)* 10 + temp
+	return isevendigit(n//10)
+
 def fun_recursion_onlyevendigits(l): 
+	if l == []:
 		return []
-
-
-def resultant(l, n, position, new_lst):
-	if (position >= n):
-		return new_lst
-	new_lst.append(evendigit(l[position]), len(str(l[position])),0,"")
-	return resultant(l,n,position +1, new_lst)
-
-def evendigit(s, slen, sposition, new_strlst):
-	if 
+	else:
+		return [isevendigit(l[0])] + fun_recursion_onlyevendigits(l[1:])
