@@ -20,7 +20,7 @@ def isKaprekarNumber(num):
     nsquared = num**2
     count = 1 # count tells us what exponent to use
     right = nsquared%10
-    left = nsquared/10
+    left = nsquared//10
     while (left!=0):
         if (right != 0) and (left+right == num):
             return True
@@ -47,28 +47,6 @@ def fun_nearestkaprekarnumber(n):
         return lower
     return upper
 
-# def fun_nearestkaprekarnumber(n):
-#     m = str(n)
-#     if len(m) == 2:
-#         start = n -10
-#         end = n + 10
-#     if len(m) == 3:
-#         start = n - 100
-#         end = n + 100
-#     else:
-#         start = n - 1500
-#         end = n + 1500
-#     l = []
-#     for i in range(start,end+1):
-#         k = float(i)
-#         ans = math.log10(k)- math.floor(math.log10(k))
-#         if(ans != 0 and iskaprekanumber(i) == True):
-#             l.append(i)
-#     s =[]
-#     for j in l:
-#         s.append(abs(j - n))
-#     ans = s.index(min(s))
-            
-#     return l[ans]
+
 
 print(fun_nearestkaprekarnumber(45))
