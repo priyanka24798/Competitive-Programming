@@ -16,18 +16,19 @@ import math
 
 
 def isKaprekarNumber(num):
-    if (num == 1): return True
-    nsquared = num**2
-    count = 1 # count tells us what exponent to use
-    right = nsquared%10
-    left = nsquared//10
-    while (left!=0):
-        if (right != 0) and (left+right == num):
+    if (num == 1): 
+        return True
+    square = num ** 2
+    count = 1
+    right = square % 10
+    left = square // 10
+    while (left > 0):
+        if (right != 0) and (left + right == num):
             return True
-        digit = left%10
+        digit = left % 10
         right = right+((10**count)*digit)
-        left = left//10
-        count += 1
+        left = left // 10
+        count = count + 1
     return False
 
 def fun_nearestkaprekarnumber(n):
