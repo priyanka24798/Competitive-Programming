@@ -11,25 +11,29 @@
 import math
 
 def isprime(n):
-    if n < 2:
+    if n < 1:
         return False
     else:
-        for i in range(2, (n//2) + 1):
-            if n % i == 0:
-                return False
-                break
-        return True
+        if n > 1:
+            for i in range(2, (n)):
+                if n % i == 0:
+                    return False
+                    break
+            return True
+        return False
 
 def digits(n):
     n = abs(n)
-    couont = 1
-    while (n > 30):
+    count = 1
+    while (n > 10):
         n = n // 10
         count = count + 1
     return count
 
 def truncatable(n):
-    if isprime(n) == False:
+    if isprime(n) == False :
+        return False
+    if "0" in str(n):
         return False
     else:
         digit = digits(n)
@@ -41,7 +45,7 @@ def truncatable(n):
 
 def fun_nth_lefttruncatableprime(n):
     lst = []
-    for i in range(500):
+    for i in range(5000):
         if truncatable(i):
             lst.append(i)
     return lst[n]
