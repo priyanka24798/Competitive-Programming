@@ -11,6 +11,8 @@
 
 
 def isevendigit(n):
+	if n == 0:
+		return 0
 	temp = n % 10
 	if n % 2 == 0:
 		return isevendigit(n // 10)* 10 + temp
