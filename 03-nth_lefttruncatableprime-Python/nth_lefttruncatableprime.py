@@ -10,5 +10,23 @@
 
 import math
 
+def isprime(n):
+    if n < 2:
+        return False
+    else:
+        for i in range(2, (n//2) + 1):
+            if n % i == 0:
+                return False
+                break
+        return True
+
+def digits(n):
+    n = abs(n)
+    couont = 1
+    while (n > 30):
+        n = n // 10
+        count = count + 1
+    return count
+
 def fun_nth_lefttruncatableprime(n):
     return 1
