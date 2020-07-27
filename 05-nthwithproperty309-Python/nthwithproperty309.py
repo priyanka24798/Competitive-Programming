@@ -5,5 +5,15 @@
 # the nth number with Property309.
 
 def nthwithproperty309(n):
-	# Your code goes here
-	pass
+	if n == 0:
+		return 309
+	x = 310
+	k = 1
+	while(True):
+		result = str(pow(x, 5))
+		if ("0","1","2","3","4","5","6","7","8","9" in result):
+			if k == n:
+				return result
+			else:
+				k = k + 1
+		result = result + 1
